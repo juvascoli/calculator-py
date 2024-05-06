@@ -1,10 +1,15 @@
 def menu():
+
+  opcao = -1
+  while (opcao < 1 or opcao > 4):
     print(':D menu')
     print('1- adição')
     print('2- subtração')
     print('3- multiplicação')
     print('4- divisaõ')
     opcao = int(input('escolha a operação: '))
+    if (opcao < 1 or opcao > 4):
+        print('opção inválida')
     return opcao
 
 def entrada_dados():
